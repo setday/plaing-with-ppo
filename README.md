@@ -42,11 +42,13 @@ Below are some example videos of the PPO agent in action:
 
 The following charts show the training progress of the PPO agent:
 
-- **Reward over Time**:
-  ![Reward over Time](tensorboard/reward_over_time.png)
+![Charts](examples/results.png)
 
-- **Loss over Time**:
-  ![Loss over Time](tensorboard/loss_over_time.png)
+PS: The reward charts look a bit strange due to the method of logging them. As you can see in the demonstrations, there really is learning.
+
+As we can see it is impossible to give an unambiguous result. In many cases, loss metrics do fall, but not always in the right direction.
+
+It is also possible to test models with non-discrete actions, but the agents do not work very well on them. This is most likely due to the choice of agent architecture.
 
 ## Usage
 
@@ -76,3 +78,8 @@ _the following flags can be added:
 --allow_recording (record the video of every 100-th episode)_
 
 Replace `<environment_name>` with the name of the Gym environment you want to train on.
+
+## Possible improvements
+
+- Add an early stop by KL divergence (in my tests, there were strong drawdowns in quality, so it was decided to remove it; moreover, it is mainly inherent in TRPO, not PPO)
+- Add normalization of advantage and values (in my case, it didn't bring any changes)

@@ -177,3 +177,5 @@ cython_debug/
 tensorboard/
 
 .vscode/
+
+graph.ipynb
