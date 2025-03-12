@@ -34,9 +34,12 @@ This approach have been on a different gymnasium environments with MLP Agent and
 
 Below are some example videos of the PPO agent in action:
 
-- **Environment 'CartPole-v1'**: ![CartPole-v1](examples/CartPole-v1/example.gif)
-- **Environment 'MountainCar-v0'**: ![MountainCar-v0](examples/MountainCar-v0/example.gif)
-- **Environment 'Acrobot-v1'**: ![Acrobot-v1](examples/Acrobot-v1/example.gif)
+**Environment `CartPole-v1`**:
+![CartPole-v1](examples/CartPole-v1/example.gif)
+**Environment `MountainCar-v0`**:
+![MountainCar-v0](examples/MountainCar-v0/example.gif)
+**Environment `Acrobot-v1`**:
+![Acrobot-v1](examples/Acrobot-v1/example.gif)
 
 ## Charts
 
