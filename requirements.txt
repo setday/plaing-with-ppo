@@ -1,0 +1,6 @@
+jax==0.5.2
+flax==0.10.4
+gymnasium==1.1.1
+gymnasium[other]==1.1.1
+gymnasium[classic-control]==1.1.1
+click==8.1.8
